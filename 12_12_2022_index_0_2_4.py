@@ -1,0 +1,6 @@
+n=int(input())
+l=list(map(int,input().split()))
+print(l)
+print(l[0])
+print(l[2])
+print(l[4])
