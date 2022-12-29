@@ -2,6 +2,9 @@ from tkinter import *
 def addNumbers():
     res=int(e1.get())+int(e2.get())
     s.set(res)
+def subtractNumbers():
+    res=int(e1.get())-int(e2.get())
+    s.set(res)
 cal = Tk()
 s=StringVar()
 Label(cal, text="First").grid(row=0)
@@ -13,5 +16,7 @@ e2 = Entry(cal)
 e1.grid(row=0, column=1)
 e2.grid(row=1, column=1)
 b = Button(cal, text="Addition", command=addNumbers)
-b.grid(row=4)
+bb = Button(cal, text="Subtraction", command=subtractNumbers)
+b.grid(row=4,column=0)
+bb.grid(row=4,column=1)
 mainloop()
