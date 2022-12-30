@@ -4,7 +4,7 @@ c = n[0]
 d = n[1]
 k=[]
 for i in range(d,c):
-  k+=[i]
+  k+=[a[i]]
 for i in range(d):
-  k+=[i]
+  k+=[a[i]]
 print(k)
