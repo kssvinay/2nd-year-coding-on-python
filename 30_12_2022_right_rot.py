@@ -1,3 +1,6 @@
-n = int(input("enter limit"))
-l = [i for i in range(1,n) if i%2==1]
-print(l)
+n = list(map(int,input().split()))
+l = list(map(int,input().split()))
+a = l[:n[0]-n[1]]
+b = l[n[0]-n[1]:]
+for i in b+a:
+    print(i,end=" ")
